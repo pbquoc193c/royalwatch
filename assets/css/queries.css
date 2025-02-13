@@ -1,0 +1,177 @@
+:root {
+  --background-color: #3d3e3e;
+  --primary-text-color: #f5f5f5;
+  --darker-text-color: #d2d2d2;
+  --black-text-color: #121212;
+  --border-color: #282828;
+  --transition: 0.3s;
+}
+
+/* Large devices */
+@media only screen and (max-width: 1300px) {
+  .benefits {
+    columns: 16rem 3;
+  }
+
+  .benefit__description {
+    width: 65%;
+  }
+
+  .company-description {
+    width: 65%;
+  }
+}
+
+/* Landscape tablets */
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 50%;
+  }
+
+  .menu {
+    gap: 3.6rem;
+  }
+
+  .user__cart,
+  .user__account {
+    padding: 0.4rem 1.6rem;
+  }
+
+  .hero-text {
+    width: 50%;
+  }
+
+  .hero-text__title {
+    font-size: 3.6rem;
+  }
+
+  .hero-text__content {
+    font-size: 2rem;
+  }
+
+  .hero-text__subtitle {
+    font-size: 2.8rem;
+  }
+
+  .wrapper-slider {
+    width: 90%;
+  }
+
+  .benefit__description {
+    width: 75%;
+  }
+
+  .company-description {
+    width: 75%;
+  }
+}
+
+/* Portrait tablets */
+@media only screen and (max-width: 768px) {
+  .section-hero .container {
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .open.menu {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    display: block;
+    background-image: linear-gradient(
+      var(--background-color),
+      var(--border-color)
+    );
+    box-shadow: 0 0 2rem var(--black-text-color);
+    border-radius: 1rem;
+    padding: 3.2rem;
+    z-index: 2;
+    animation: showMenu 0.5s ease forwards;
+  }
+
+  .open.menu::before {
+    content: "";
+    display: block;
+    width: 2.4rem;
+    height: 2.4rem;
+    transform: translate(-100%, -50%) rotate(45deg);
+    background-color: var(--background-color);
+    border-radius: 2px;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .menu__item {
+    padding: 1.2rem 6.4rem;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .close-menu {
+    display: none;
+  }
+
+  .hero-text {
+    width: 60%;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+
+  .hero-text__title {
+    font-size: 3.2rem;
+  }
+
+  .hero-text__content {
+    font-size: 1.8rem;
+  }
+
+  .hero-text__subtitle {
+    font-size: 2.4rem;
+  }
+
+  .tab {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits {
+    columns: 2.4rem 1;
+  }
+
+  .footer .container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-socials {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Small smartphones */
+@media only screen and (max-width: 480px) {
+  .container {
+    margin: 0 3.2rem;
+  }
+
+  .user {
+    gap: 0;
+  }
+
+  .hero-text,
+  .benefit__description,
+  .company-description {
+    width: 80%;
+  }
+
+  .tab {
+    padding: 4.8rem;
+  }
+}
