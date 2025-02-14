@@ -226,14 +226,26 @@ body {
 .product {
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
   border: 2px solid var(--border-color);
   border-radius: 0.8rem;
   transition: all var(--transition);
   break-inside: avoid;
+=======
+  box-shadow: inset 0 0 1rem var(--border-color);
+  border-radius: 0.8rem;
+  transition: all var(--transition);
+  break-inside: avoid;
+  filter: brightness(0.8);
+>>>>>>> eca87c3 (Fix slider product)
 }
 
 .product:hover {
   box-shadow: 0 0 1rem var(--black-text-color);
+<<<<<<< HEAD
+=======
+  filter: brightness(1);
+>>>>>>> eca87c3 (Fix slider product)
 }
 
 .product__img {
@@ -242,6 +254,14 @@ body {
   object-fit: contain;
   margin: 1.2rem 0;
   cursor: pointer;
+<<<<<<< HEAD
+=======
+  transition: all var(--transition);
+}
+
+.product__img:hover {
+  scale: 1.1;
+>>>>>>> eca87c3 (Fix slider product)
 }
 
 .product-info {

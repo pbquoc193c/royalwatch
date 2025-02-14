@@ -21,9 +21,7 @@ function getVisibleItems() {
 }
 
 function getWidthContainer() {
-  let visibleCount = getVisibleItems();
-  let productWidth = products[0].clientWidth;
-  let containerWidth = productWidth * visibleCount + 35 * visibleCount;
+  let containerWidth = productContainer.clientWidth + 25;
 
   return containerWidth;
 }
