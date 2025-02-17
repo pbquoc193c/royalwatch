@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a8df118026.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="./assets/images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/queries.css" />
+    <script src="./assets/js/mobile.js" defer></script>
+    <title>Sign in - Royal Watch</title>
+  </head>
+  <body>
+    <div class="login main-container">
+      <div class="container grid grid--3-cols">
+        <img
+          src="./assets/images/logo.png"
+          alt=""
+          class="logo"
+          width="30"
+          height="30"
+        />
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="./index.html" class="menu__link">Home</a>
+          </li>
+          <li class="menu__item">
+            <a href="./men_products.html" class="menu__link">Men</a>
+          </li>
+          <li class="menu__item">
+            <a href="./women_products.html" class="menu__link">Women</a>
+          </li>
+          <li class="menu__item">
+            <a href="./couple_products.html" class="menu__link">Couple</a>
+          </li>
+        </ul>
+        <div class="user">
+          <a href="#" class="user__cart">
+            <i class="icon fa-brands fa-opencart"></i>
+          </a>
+          <a href="#" class="user__account">
+            <i class="icon fa-regular fa-user"></i>
+          </a>
+
+          <i class="mobile-menu fa-solid fa-list-ul"></i>
+          <i class="close-menu fa-solid fa-x"></i>
+        </div>
+      </div>
+
+      <div class="wrapper-login radius">
+        <h2 class="login-title">Login</h2>
+        <div class="group-input">
+          <label for="username" class="form-label">Username</label>
+          <input type="text" class="form-input" id="username" />
+
+          <label for="password" class="form-label">Password</label>
+          <input type="text" class="form-input" id="password" />
+
+          <div class="remember">
+            <input type="checkbox" id="remember-me" />
+            <span for="remember-me">Remember Me</span>
+          </div>
+        </div>
+        <button class="btn btn-login radius">Sign in</button>
+
+        <span class="link"
+          >Don't have an account? <a href="./register.html">Sign up</a></span
+        >
+      </div>
+    </div>
+  </body>
+</html>

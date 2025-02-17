@@ -21,7 +21,7 @@ function getVisibleItems() {
 }
 
 function getWidthContainer() {
-  let containerWidth = productContainer.clientWidth + 25;
+  let containerWidth = productContainer.clientWidth + 25.5;
 
   return containerWidth;
 }
@@ -63,23 +63,3 @@ window.addEventListener("resize", function () {
 
 rightArr.addEventListener("click", nextPage);
 leftArr.addEventListener("click", previousPage);
-
-// Mobile Menu
-const menu = document.querySelector(".menu");
-const openBtn = document.querySelector(".mobile-menu");
-const closeBtn = document.querySelector(".close-menu");
-
-function handleMenu() {
-  menu.classList.toggle("open");
-
-  if (menu.classList.contains("open")) {
-    openBtn.style.display = "none";
-    closeBtn.style.display = "block";
-  } else {
-    openBtn.style.display = "block";
-    closeBtn.style.display = "none";
-  }
-}
-
-openBtn.addEventListener("click", handleMenu);
-closeBtn.addEventListener("click", handleMenu);

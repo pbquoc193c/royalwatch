@@ -9,6 +9,7 @@
 
 /* Large devices */
 @media only screen and (max-width: 1300px) {
+  /* Homepage */
   .benefits {
     columns: 16rem 3;
   }
@@ -20,10 +21,21 @@
   .company-description {
     width: 65%;
   }
+
+  /* Login */
+  .wrapper-login {
+    width: 50%;
+  }
+
+  /* Product */
+  .product-container .products {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* Landscape tablets */
 @media only screen and (max-width: 1024px) {
+  /* Homepage */
   html {
     font-size: 50%;
   }
@@ -64,11 +76,18 @@
   .company-description {
     width: 75%;
   }
+
+  /* Login */
+  .wrapper-login {
+    width: 60%;
+  }
 }
 
 /* Portrait tablets */
 @media only screen and (max-width: 768px) {
-  .section-hero .container {
+  /* Homepage */
+  .section-hero .container,
+  .main-container .container {
     grid-template-columns: 1fr 1fr;
     position: relative;
   }
@@ -153,10 +172,36 @@
   .footer-socials {
     grid-column: 1 / -1;
   }
+
+  /* Login */
+  .wrapper-login {
+    top: 50%;
+    width: 80%;
+  }
+
+  /* Product */
+  .product-container .products {
+    width: 100%;
+  }
+
+  .filters {
+    transform: translateX(-110%);
+    transition: all var(--transition);
+  }
+
+  .filter-icon {
+    display: block;
+  }
+
+  .open.filters {
+    transform: translateX(0);
+    width: 90%;
+  }
 }
 
 /* Small smartphones */
 @media only screen and (max-width: 480px) {
+  /* Homepage */
   .container {
     margin: 0 3.2rem;
   }
@@ -171,7 +216,23 @@
     width: 80%;
   }
 
+  .btn.category {
+    padding: 0.8rem 2.4rem;
+  }
+
   .tab {
     padding: 4.8rem;
+  }
+
+  /* Login */
+  .wrapper-login {
+    width: 90%;
+  }
+
+  /* Product */
+  .product-container .products {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem;
+    padding: 0 2.4rem;
   }
 }

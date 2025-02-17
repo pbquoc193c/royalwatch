@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a8df118026.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="./assets/images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/queries.css" />
+    <script src="./assets/js/mobile.js" defer></script>
+    <script src="./assets/js/product.js" defer></script>
+    <title>Men's Watch - Royal Watch</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container grid grid--3-cols">
+        <img
+          src="./assets/images/logo.png"
+          alt=""
+          class="logo"
+          width="30"
+          height="30"
+        />
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="./index.html" class="menu__link">Home</a>
+          </li>
+          <li class="menu__item">
+            <a href="./men_products.html" class="menu__link">Men</a>
+          </li>
+          <li class="menu__item">
+            <a href="./women_products.html" class="menu__link">Women</a>
+          </li>
+          <li class="menu__item">
+            <a href="./couple_products.html" class="menu__link">Couple</a>
+          </li>
+        </ul>
+        <div class="user">
+          <a href="#" class="user__cart">
+            <i class="icon fa-brands fa-opencart"></i>
+          </a>
+          <a href="./login.html" class="user__account">
+            <i class="icon fa-regular fa-user"></i>
+          </a>
+
+          <i class="mobile-menu fa-solid fa-list-ul"></i>
+          <i class="close-menu fa-solid fa-x"></i>
+        </div>
+      </div>
+
+      <main>
+        <div class="product-container">
+          <div class="filters">
+            <div class="filter-icon">
+              <i class="open-filter fa-solid fa-angle-right"></i>
+              <i class="close-filter fa-solid fa-angle-left"></i>
+            </div>
+            <h2 class="title">Product Search</h2>
+
+            <h3 class="filter__name">Brands</h3>
+            <ul class="filter-items filter-brand"></ul>
+
+            <h3 class="filter__name">Colors</h3>
+            <ul class="filter-items filter-color"></ul>
+
+            <h3 class="filter__name">Price</h3>
+            <ul class="filter-items">
+              <li class="filter-item">
+                <input
+                  type="checkbox"
+                  class="checkbox price-checkbox"
+                  value="1-99"
+                /><span>Under $100</span>
+              </li>
+              <li class="filter-item">
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="checkbox price-checkbox"
+                  value="100-200"
+                /><span>$100 - $200</span>
+              </li>
+              <li class="filter-item">
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="checkbox price-checkbox"
+                  value="200-500"
+                /><span>$200 - $500</span>
+              </li>
+              <li class="filter-item">
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="checkbox price-checkbox"
+                  value="500-"
+                /><span>Above $500</span>
+              </li>
+            </ul>
+          </div>
+          <div class="products"></div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
